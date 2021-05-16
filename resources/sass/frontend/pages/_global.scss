@@ -1,0 +1,5 @@
+@import '../libraries/tailwind.scss';
+@import '../helpers/variables';
+body{
+    background-color: $body-bg
+}

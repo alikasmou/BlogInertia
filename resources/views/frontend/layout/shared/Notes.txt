@@ -1,0 +1,2 @@
+This shared files will contains all shared components only for layouts
+buttons - navbars - asides ....etc

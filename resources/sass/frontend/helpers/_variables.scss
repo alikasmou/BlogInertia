@@ -1,0 +1,83 @@
+// Typography
+$font: 'Open Sans', sans-serif;
+$logo-font: 'Open Sans', sans-serif;
+$font-xs : 1rem;
+$font-s : 1.2rem;
+$font-m : 1.4rem;
+$font-l : 1.6rem;
+$font-xl : 1.8rem;
+$line-height: 1.6;
+
+// Padding and margins
+$p-xs : 1rem;
+$p-s : 1.5rem;
+$p-m : 2rem;
+$p-l : 2.5rem;
+$p-xl : 5rem;
+$m-xs : 1rem;
+$m-s : 1.5rem;
+$m-m : 2rem;
+$m-l : 2.5rem;
+$m-xl : 5rem;
+$space-between-elements: 6rem;
+// radius 
+$r : .4rem;
+$r-xl : 2rem;
+
+// Colors
+
+// ======> White color
+$white : #ffffff;
+$whiteMilk: #FAF8F0;
+$whiteCream: #E4DFCF;
+
+// ======> Black and Silver color
+$silver-light: #8E8E93;
+$silver: #48484A;
+$silver-dark: #2C2C2E;
+$black: #1C1C1D;
+
+// ======> Blue color
+$blue: #4274B9;
+$blue-dark: #5A5DAA;
+$blue-light: #63C6F1;
+
+// ======> Green color
+$green: #4DB85A;
+$green-dark: #109A48;
+$green-light: #5ABA47;
+
+// ======> orange color
+$orange: #F8951D;
+$orange-dark: #DC5F26;
+$orange-light: #F7AC1E;
+
+// ======> Red color
+$red: #EE3658;
+$red-dark: #B11F31;
+$red-light: #EF3C61;
+
+// ======> Yellow color
+$yellow: #FED607;
+$yellow-dark: #FFCD05;
+$yellow-light: #F7EC13;
+
+// ======> Green color
+
+$purple: #925CA6;
+$teal: #00A6A6;
+$pinkOrange: #F15B66;
+$orangeWarning : #EF4334;
+$pink: #ED237C;
+$lemon : #FEEA87;
+
+
+// =======> General
+$nav-h : 6rem;
+
+
+
+// =======> Theme Settings
+$body-bg : $whiteMilk;
+$main-color : $blue;
+$text-color : $silver-dark;

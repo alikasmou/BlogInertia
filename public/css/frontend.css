@@ -1,0 +1,13 @@
+/*======> Call Pages*/
+/*=====> Call Variables */
+/*
+===> COMPONENTS
+@import '../components/btns/default';
+@import '../components/cards/default';
+@import '../components/forms/default';
+@import '../components/lists/default';
+@import '../components/tables/default';
+*/
+body {
+  background-color: red;
+}

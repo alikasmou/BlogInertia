@@ -3,6 +3,7 @@
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use App\Http\Controllers\BlogController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,7 +16,9 @@ use Inertia\Inertia;
 |
 */
 
-Route::get('/', function () {
+$frontend = 'frontend.pages.home.';
+
+Route::get('/app', function () {
     return Inertia::render('Welcome', [
         'canLogin' => Route::has('login'),
         'canRegister' => Route::has('register'),
@@ -29,6 +32,13 @@ Route::get('/testing', function(){
         'canLogin' => Route::has('login')
     ]);
 });
+
+Route::get('/', function(){
+    return view('frontend.index');
+});
+
+Route::get('/blog', [BlogController::class, 'index']);
+
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia::render('Dashboard');
