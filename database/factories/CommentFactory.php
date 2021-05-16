@@ -3,6 +3,8 @@
 namespace Database\Factories;
 
 use App\Models\Comment;
+use App\Models\User;
+use App\Models\Blog;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class CommentFactory extends Factory
@@ -23,8 +25,8 @@ class CommentFactory extends Factory
     {
         return [
             //
-            'user_id' => '1',
-            'blog_id' => '1',
+            'user_id' => User::factory(),
+            'blog_id' => Blog::factory(),
             'comment' => $this->faker->sentence(8),
             'created_at' => now(),
             'updated_at' => now()

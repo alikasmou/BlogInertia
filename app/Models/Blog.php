@@ -12,21 +12,36 @@ class Blog extends Model
 {
     use HasFactory;
 
-    public function user(){
+    public function category()
+    {
 
-        //return $this->belongsTo(User::class);
-
-    }
-
-    public function comments(){
-
-        //return $this->hasMany(Comment::class);
+        return $this->hasOne(Category::class, 'category_id', 'id');
 
     }
 
-    public function categories(){
+    public function coverpage()
+    {
 
-        //return $this->belongsTo(Cateory::class);
+        //ClassName::class , 'fk' , 'pk'
+        //Default always snake case Ex : Model name User user_id
+        // Each Blog has only one image stored in BlogImage Class
+        return $this->hasOne(BlogImage::class, 'img_id', 'id');
 
     }
+
+    public function user()
+    {
+
+        // Each Blog belongs to a single user
+        return $this->belongsTo(User::class, 'user_id', 'id');
+
+    }
+
+    public function comments()
+    {
+        // Each Blog has many commentes 
+        return $this->hasMany(Comment::class, 'blog_id', 'id');
+
+    }
+
 }

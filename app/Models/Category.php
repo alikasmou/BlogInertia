@@ -10,10 +10,20 @@ class Category extends Model
 {
     use HasFactory;
 
-    public function blog(){
+    public function blog()
+    {
 
-        //return $this->hasMany(Blog::class);
+        // One Category Belongs to Many Blogs
+        /*
+            Ex:
+            Categories : a, b, c
+            1. Blog 1 => category a
+            2. Blog 2 => category a
+            3. Blog 3 => category c
+            and so on....
+        */
+        return $this->belongsToMany(Blog::class,'blogs','category_id');
 
     }
-    
+
 }

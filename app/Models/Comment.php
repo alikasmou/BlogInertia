@@ -11,15 +11,19 @@ class Comment extends Model
 {
     use HasFactory;
 
-    public function user(){
+    public function user()
+    {
 
-        //return $this->belongsTo(User::class);
-
+        // Each comment belongs to only one user
+        return $this->belongsTo(User::class, 'user_id');
+    
     }
 
-    public function blog(){
-
-        //return $this->belongsTo(Blog::class);
-
+    public function blog()
+    {
+        
+        // Each comment belongs to only one blog
+        return $this->belongsTo(Blog::class, 'blog_id');
+    
     }
 }
